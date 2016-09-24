@@ -1,0 +1,36 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <div class="row">
+      <div class="col-md-4"><h5>I Want You</h5></div>
+      <div class="col-md-4"><h5>Fade</h5></div>
+      <div class="col-md-4"><h5>Slime</h5></div>
+    </div>
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+    <ion-list>
+      <ion-item class="" ng-repeat="player in Pioneer66_playerLeaderBoard" type="item-text-wrap">
+        <h2>{{player.playerName}}</h2>
+        <p>{{player.playerHighScore}}</p>
+        <p>{{player.playerHighStreak}}</p>
+      </ion-item>
+    </ion-list>
+
+
+
+    <!-- EXAMPLE -->
+    <!-- <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list> -->
+  </ion-content>
+</ion-view>
